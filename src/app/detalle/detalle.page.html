@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <form [formGroup]="editForm" (ngSubmit)="exit()">
+      <ion-item>
+        <ion-label position="floating">Actividad</ion-label>
+        <ion-input disabled="true" formControlName="actividad" type="text" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Costo</ion-label>
+        <ion-input disabled="true" formControlName="costo" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Detalle</ion-label>
+        <ion-input disabled="true" formControlName="detalle" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Fecha</ion-label>
+        <ion-input disabled="true" formControlName="fecha" type="text" required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Tiempo</ion-label>
+        <ion-input disabled="true" formControlName="tiempo" type="text" required>
+        </ion-input>
+      </ion-item>
+    </form>
+  </ion-list>
+</ion-content>

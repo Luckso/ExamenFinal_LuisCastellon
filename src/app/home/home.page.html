@@ -1,0 +1,13 @@
+<ion-content>
+  <ion-card *ngFor="let item of Data">
+    <ion-card-header >
+      <ion-card-title>{{ item.actividad }}</ion-card-title>
+      <ion-card-subtitle>{{ item.costo }}</ion-card-subtitle>
+      <ion-icon name="eye-outline" style="zoom:2.0" [routerLink]="['/detalle/', item.id]"></ion-icon>
+    </ion-card-header>  
+  </ion-card>
+  <ion-button color="primary" shape="full" expand="block"
+  [routerLink]="['/mensaje/']">
+    Enviar Mensaje
+  </ion-button>
+</ion-content>
